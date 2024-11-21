@@ -8,6 +8,9 @@ class ChooseLocation extends StatefulWidget {
 }
 
 class _ChooseLocationState extends State<ChooseLocation> {
+
+  int counter = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +22,14 @@ class _ChooseLocationState extends State<ChooseLocation> {
         elevation: 0,
         iconTheme: IconThemeData(color: Colors.white),
       ),
-      body: Text('This is Location'),
+      body: ElevatedButton(
+          onPressed: (){
+            setState(() {
+              counter += 1;
+            });
+          },
+          child: Text('counter is $counter')
+      )
     );
   }
 }
