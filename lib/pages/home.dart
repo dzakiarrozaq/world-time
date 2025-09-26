@@ -20,8 +20,8 @@ class _HomeState extends State<Home> {
                 onPressed: () {
                   Navigator.pushNamed(context, '/location');
                 },
-                label: Text('Edit Location'),
-                icon: Icon(Icons.edit_location)
+                label: const Text('Edit Location'),
+                icon: const Icon(Icons.edit_location)
               )
             ],
           )
